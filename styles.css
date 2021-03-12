@@ -61,9 +61,164 @@ ul {
     list-style: none;
 }
 
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://ravimaurya.netlify.app/ss2.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header nav {
+    background: none;
+    padding: 10px 40px;
+}
+
+.header nav.fixed {
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.175);
+    background-color: white;
+}
+
+.header nav .navbar-brand {
+    /* color: #222222; */
+    color: #fff;
+}
+
+.header nav div ul li {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin: 0 5px;
+}
+
+.header nav div ul li a {
+    /* color: #222222; */
+    color: #fff;
+    font-weight: 400;
+    padding: 20px 16px;
+    font-weight: 400;
+    display: block;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.header nav div ul li>.nav-link::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 14px;
+    /* background: #e45447; */
+    background: #fff;
+    height: 1px;
+    width: 0;
+}
+
+.header nav div ul li>.nav-link:hover::before {
+    width: 100%;
+}
+
+.header nav div ul li>.nav-link.active::before {
+    width: 100%;
+}
+
+nav.fixed {
+    background: #f9f9ff;
+}
+
+.header nav div ul li>.nav-link::before {
+    background: #e45447;
+}
+
+.header nav.fixed div ul li a,
+nav.fixed .navbar-brand {
+    color: #222222;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(228, 84, 71, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+/* .custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+} */
+
+.name-caption {
+    width: 100%;
+}
+
+.name-caption .sub-heading {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #90acd1;
+    letter-spacing: 4px;
+}
+
+.name-caption h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.name-caption div {
+    color: #e45447;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 30px;
+}
+
+.txt-rotate>.txt {
+    border-right: 0.1rem solid #e45447;
+}
+
+
+/* .hero-shape1 {
+    position: absolute;
+    top: 2%;
+    left: 51%;
+}
+
+.hero-shape2 {
+    position: absolute;
+    top: 11%;
+    left: 31%;
+}
+
+.hero-shape3 {
+    position: absolute;
+    top: 14%;
+    left: 71%;
+}
+
+.custom-animation1 {
+    backface-visibility: hidden;
+    animation: jumping1 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 7s ease 2s;
+    user-select: none;
+}
+
+.custom-animation2 {
+    backface-visibility: hidden;
+    animation: jumping2 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 7s ease 2s;
+    user-select: none;
+}
+
+.custom-animation3 {
+    backface-visibility: hidden;
+    animation: jumping3 9s ease-in-out 2s infinite alternate;
+    animation-delay: 1s;
+    transition: all 7s ease 2s;
+    user-select: none;
+} */
+
 #about,
 .projects {
     background-color: #f9f9ff;
+    /* padding-top: 40px; */
 }
 
 .about-area .section-title h2::after,
@@ -442,4 +597,22 @@ ul {
 
 .projects .single-work:hover .overlay {
     background: #3e64ff;
+}
+
+.footer {
+    padding: 100px;
+    text-align: center;
+}
+
+@media(max-width: 700px) {
+    .row-box {
+        justify-content: space-between;
+    }
+    .row-box .box {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .row-box .box:nth-child(3) {
+        margin-bottom: 40px;
+    }
 }
