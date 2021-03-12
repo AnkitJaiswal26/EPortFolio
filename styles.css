@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 nav{
-    background: #0082e6;
+    background: transparent;
     height: 80px;
     width: 100%;
 }
@@ -54,7 +54,7 @@ a.active, a:hover{
 #check{
     display: none;
 }
-@media (max-width:952px){
+/* @media (max-width:952px){
     label.logo{
         font-size: 30px;
         padding-left: 50px;
@@ -62,7 +62,7 @@ a.active, a:hover{
     nav ul li a{
         font-size: 16px;
     }
-}
+} */
 @media (max-width: 858px){
     .checkbtn{
         display: block;
@@ -93,9 +93,30 @@ a.active, a:hover{
         left:0;
     }
 }
+@media (max-width:858px){
+    .static-txt{
+        width:100%;
+        display: block;
+        text-align: center;
+    }
+    .dynamic-txts{
+        float: left;
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+.background{
+    background-image: url(https://ravimaurya.netlify.app/ss2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 200%;
+    object-fit: fill;
+}
 .heading h1{
-    width: 320px;
-    margin: 10px auto;
+    width: 500px;
+    margin: 50px auto;
+    text-align: center;
     font-family:'Times New Roman', Times, serif;
     font-weight: bolder;
 }
@@ -103,23 +124,26 @@ a.active, a:hover{
    display: flex;
    align-items: center;
    justify-content: center;
-   min-height: 100vh;
+   min-height: 10vh;
    /* background: #343f4f;  */
 }
 .wrapper{
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .wrapper .static-txt{
     color: rgb(0, 0, 0);
     font-size: 60px;
     font-weight: 400;
-    margin-top: 30px;
-    margin-left: 150px;
-    height: 80px;
+    margin-top: 10px;
+    /* height: 80px; */
     line-height: 10px;
 }
 .wrapper .dynamic-txts{
     margin-left: 25px;
+    margin-top: 20px;
     height: 80px;
     line-height: 80px;
     overflow: hidden;
@@ -131,6 +155,7 @@ a.active, a:hover{
     font-weight: 500;
     position: relative;
     top: 0;
+    text-align: center;
     animation: slide 6s steps(4) infinite;
 }
 @keyframes slide{
