@@ -172,53 +172,13 @@ nav.fixed .navbar-brand {
     border-right: 0.1rem solid #e45447;
 }
 
-
-/* .hero-shape1 {
-    position: absolute;
-    top: 2%;
-    left: 51%;
+#about {
+    background-color: #f9f9ff;
 }
 
-.hero-shape2 {
-    position: absolute;
-    top: 11%;
-    left: 31%;
-}
-
-.hero-shape3 {
-    position: absolute;
-    top: 14%;
-    left: 71%;
-}
-
-.custom-animation1 {
-    backface-visibility: hidden;
-    animation: jumping1 9s ease-in-out 2s infinite alternate;
-    animation-delay: 1s;
-    transition: all 7s ease 2s;
-    user-select: none;
-}
-
-.custom-animation2 {
-    backface-visibility: hidden;
-    animation: jumping2 9s ease-in-out 2s infinite alternate;
-    animation-delay: 1s;
-    transition: all 7s ease 2s;
-    user-select: none;
-}
-
-.custom-animation3 {
-    backface-visibility: hidden;
-    animation: jumping3 9s ease-in-out 2s infinite alternate;
-    animation-delay: 1s;
-    transition: all 7s ease 2s;
-    user-select: none;
-} */
-
-#about,
 .projects {
     background-color: #f9f9ff;
-    /* padding-top: 40px; */
+    padding-top: 150px!important;
 }
 
 .about-area .section-title h2::after,
@@ -500,6 +460,16 @@ nav.fixed .navbar-brand {
 
 .box .percent svg circle:nth-child(2) {
     stroke-dashoffset: calc(440 - (440*87)/100);
+    stroke: #90acd1;
+}
+
+.box:nth-child(2) .percent svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440*80)/100);
+    stroke: #90acd1;
+}
+
+.box:nth-child(3) .percent svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440 - (440*76)/100);
     stroke: #90acd1;
 }
 
